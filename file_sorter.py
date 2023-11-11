@@ -1,6 +1,7 @@
 import os
 
-downloads_folder = "C:/Users/erike/Downloads"
+user_home = os.path.expanduser("~")
+downloads_folder = os.path.join(user_home, "Downloads")
 
 folders = ['zips', 'jpgs', 'others']
 for folder in folders:
