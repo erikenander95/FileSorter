@@ -7,7 +7,7 @@ user_home = os.path.expanduser("~")
 downloads_folder = os.path.join(user_home, "Downloads")
 
 # Define the subfolders we want to organize files into
-folders = ['zips', 'jpgs', 'others']
+folders = ['zips', 'jpgs', 'exe', 'mp4', 'pdf', 'others']
 
 # Create subfolders if they don't exist
 for folder in folders:
@@ -29,6 +29,12 @@ for filename in os.listdir(downloads_folder):
             destination_folder = os.path.join(downloads_folder, 'zips')
         elif file_extension == 'jpg':
             destination_folder = os.path.join(downloads_folder, 'jpgs')
+        elif file_extension == 'exe':
+            destination_folder = os.path.join(downloads_folder, 'exe')
+        elif file_extension == 'mp4':
+            destination_folder = os.path.join(downloads_folder, 'mp4')
+        elif file_extension == 'pdf':
+            destination_folder = os.path.join(downloads_folder, 'pdf')
         else:
             destination_folder = os.path.join(downloads_folder, 'others')
 
