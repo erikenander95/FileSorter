@@ -73,7 +73,7 @@ Suppose you have the following files in your 'Downloads' folder:
 - `document.pdf`
 - `image.jpg`
 - `archive.zip`
-- `music.mp3`
+- `music.mp4`
 - `data.csv`
 
 After running the program, your 'Downloads' folder will look like this:
@@ -87,9 +87,13 @@ Downloads/
 ├── jpgs/
 │   └── image.jpg
 │
+├── mp4/
+│   └── music.mp4
+│
+├── pdf/
+│   └── document.pdf
+│
 ├── others/
-    ├── document.pdf
-    ├── music.mp3
     └── data.csv
 ```
 
