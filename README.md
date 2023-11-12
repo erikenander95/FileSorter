@@ -28,7 +28,7 @@ Here's a breakdown of the provided code:
    - The `folders` list contains the names of the folders you want to create.
    - A loop iterates over each folder name, checks if the folder already exists, and creates it if it doesn't.
    ```python
-   folders = ['zips', 'jpgs', 'others']
+   folders = ['zips', 'jpgs', 'exe', 'mp4', 'pdf', 'others']
    for folder in folders:
        folder_path = os.path.join(downloads_folder, folder)
        if not os.path.exists(folder_path):
@@ -51,9 +51,15 @@ Here's a breakdown of the provided code:
                destination_folder = os.path.join(downloads_folder, 'zips')
            elif file_extension == 'jpg':
                destination_folder = os.path.join(downloads_folder, 'jpgs')
+           elif file_extension == 'exe':
+               destination_folder = os.path.join(downloads_folder, 'exe')
+           elif file_extension == 'mp4':
+               destination_folder = os.path.join(downloads_folder, 'mp4')
+           elif file_extension == 'pdf':
+               destination_folder = os.path.join(downloads_folder, 'pdf')
            else:
                destination_folder = os.path.join(downloads_folder, 'others')
-   
+      
            destination_path = os.path.join(destination_folder, filename)
    
            os.rename(file_path, destination_path)
